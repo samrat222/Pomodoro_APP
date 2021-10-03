@@ -43,7 +43,6 @@ function displayEndTime(timestamp) {
   const hour = end.getHours();
   const minutes = end.getMinutes();
   const adjustedHour = hour > 12 ? hour - 12 : hour;
-  // const adjustedMinutes = minutes < 10 ? '0' : minutes;
   const adjustedMinutes =
     minutes === 0 ? "00" : minutes < 10 ? "0" + minutes : minutes;
   endTime.textContent = `Be back at ${adjustedHour}:${adjustedMinutes}`;
@@ -56,7 +55,7 @@ function startTimer() {
 buttons.forEach((button) => button.addEventListener("click", startTimer));
 document.customForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  const mins = this.minutes.value;
+  const mins = parseInt(this.minutes.value, 10);
   timer(mins * 60);
   this.reset();
 });

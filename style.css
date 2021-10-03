@@ -99,13 +99,17 @@ body {
   max-width: 100rem;
   margin: auto;
   padding: 0 12px;
+  text-align: center;
 }
 .display__time-left > p {
   font-size: 35px;
 }
-@media (max-width: 800px) and (min-width: 300px) {
+@media screen and (max-width: 768px) {
   .timer {
-    background-color: yellow;
-    font-size: 50px;
+    background-color: rgb(243, 144, 16);
+    font-size: 1rem;
+  }
+  .display__end-time {
+    color: rgb(243, 144, 16);
   }
 }
