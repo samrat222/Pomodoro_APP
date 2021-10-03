@@ -113,3 +113,8 @@ body {
     color: rgb(243, 144, 16);
   }
 }
+
+.social__icon--link {
+  color: #fff;
+  font-size: 3.5rem;
+}
