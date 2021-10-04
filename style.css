@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   background: #8e24aa;
-  background:  #5c038f ;
+  background: #5c038f;
 }
 
 *,
@@ -14,7 +14,9 @@ html {
 body {
   margin: 0;
   text-align: center;
-  font-family: ArialRounded, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: ArialRounded, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 .display__time-left {
@@ -93,16 +95,30 @@ body {
 .description {
   color: aliceblue;
   font-size: 18px;
-    line-height: 1.6em;
-    max-width: 100rem;
-    margin: auto;
-    padding: 0 12px;
+  line-height: 1.6em;
+  max-width: 100rem;
+  margin: auto;
+  padding: 0 12px;
+  text-align: center;
 }
-.display__time-left >p{
+.display__time-left > p {
   font-size: 35px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .timer {
-    background-color: yellow;
+    background-color: rgb(243, 144, 16);
+    font-size: 1rem;
   }
+  .display__end-time {
+    color: rgb(243, 144, 16);
+  }
+}
+
+.social__icon--link {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.small-font{
+  font-size: 4rem;
 }
