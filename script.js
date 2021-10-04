@@ -31,22 +31,6 @@ function timer(seconds) {
       //display it
       displayTimeLeft(secondsLeft);
     }, 1000);
-  }
-  
-
-  displayTimeLeft(seconds);
-  displayEndTime(then);
-
-  contdown = setInterval(() => {
-    const secondsLeft = Math.round((then - Date.now()) / 1000);
-    //Check if we should stop it
-    if (secondsLeft < 0) {
-      clearInterval(contdown);
-      return;
-    }
-    //display it
-    displayTimeLeft(secondsLeft);
-  }, 1000);
 
 }
 function displayTimeLeft(seconds) {
@@ -84,7 +68,6 @@ document.customForm.addEventListener("submit", function (e) {
   const mins = parseInt(this.minutes.value, 10);
   timer(mins * 60);
   this.reset();
-
 });
 
 
