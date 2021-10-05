@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 0.625rem;
   background: #8e24aa;
   background: #5c038f;
 }
@@ -22,7 +22,7 @@ body {
 .display__time-left {
   font-style: normal;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 11rem;
   margin: 0;
   color: white;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
@@ -82,9 +82,9 @@ body {
 }
 .display {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 0px 30px;
-  border-radius: 6px;
-  margin-bottom: 20px;
+  padding: 1.25rem 0px 1.875rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1.25rem;
 }
 
 .display__end-time {
@@ -102,7 +102,7 @@ body {
   text-align: center;
 }
 .display__time-left > p {
-  font-size: 35px;
+  font-size: 2rem;
 }
 @media screen and (max-width: 768px) {
   .timer {
