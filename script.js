@@ -31,7 +31,7 @@ function timer(seconds) {
       //display it
       displayTimeLeft(secondsLeft);
     }, 1000);
-
+  }
 }
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
@@ -69,6 +69,4 @@ document.customForm.addEventListener("submit", function (e) {
   timer(mins * 60);
   this.reset();
 });
-
-
 
