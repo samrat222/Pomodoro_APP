@@ -32,20 +32,6 @@ const timer = (seconds) => {
       displayTimeLeft(secondsLeft);
     }, 1000);
   }
-
-  displayTimeLeft(seconds);
-  displayEndTime(then);
-
-  contdown = setInterval(() => {
-    const secondsLeft = Math.round((then - Date.now()) / 1000);
-    //Check if we should stop it
-    if (secondsLeft < 0) {
-      clearInterval(contdown);
-      return;
-    }
-    //display it
-    displayTimeLeft(secondsLeft);
-  }, 1000);
 };
 
 const displayTimeLeft = (seconds) => {
