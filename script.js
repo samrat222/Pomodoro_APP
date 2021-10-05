@@ -31,11 +31,7 @@ function timer(seconds) {
       //display it
       displayTimeLeft(secondsLeft);
     }, 1000);
-<<<<<<< HEAD
   }
-=======
-
->>>>>>> d4a798af2008c030e8833d1ac83cf376fdc7e4a9
 }
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
@@ -74,8 +70,3 @@ document.customForm.addEventListener("submit", function (e) {
   this.reset();
 });
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d4a798af2008c030e8833d1ac83cf376fdc7e4a9
