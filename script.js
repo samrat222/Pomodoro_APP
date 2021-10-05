@@ -9,6 +9,7 @@ function timer(seconds) {
 
   const now = Date.now();
   const then = now + seconds * 1000;
+
   //testing if time entered is valid
   const endTestTime = new Date(then);
   if(endTestTime == 'Invalid Date'){
@@ -31,7 +32,6 @@ function timer(seconds) {
       displayTimeLeft(secondsLeft);
     }, 1000);
   }
-  
 }
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
@@ -69,3 +69,4 @@ document.customForm.addEventListener("submit", function (e) {
   timer(mins * 60);
   this.reset();
 });
+
