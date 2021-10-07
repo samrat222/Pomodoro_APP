@@ -113,11 +113,14 @@ body {
   .display__end-time {
     color: rgb(243, 144, 16);
   }
-  .timer__button{
-    width:50%;
+  .timer__button {
+    width: 50%;
   }
-  #custom{
-    width:100%;
+  #custom {
+    width: 100%;
+  }
+  .timer__button {
+    font-size: 1.5rem;
   }
 }
 
@@ -125,6 +128,6 @@ body {
   color: #fff;
   font-size: 3.5rem;
 }
-.small-font{
+.small-font {
   font-size: 4rem;
 }
