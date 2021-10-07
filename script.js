@@ -12,15 +12,15 @@ function timer(seconds) {
 
   //testing if time entered is valid
   const endTestTime = new Date(then);
-  if(endTestTime == 'Invalid Date'){
+  if (endTestTime == "Invalid Date") {
     timerDisplay.innerHTML = "Please enter a valid time in minutes";
-    timerDisplay.classList.add('small-font');
-    endTime.textContent = '';
-  }else{
-    timerDisplay.classList.remove('small-font');
+    timerDisplay.classList.add("small-font");
+    endTime.textContent = "";
+  } else {
+    timerDisplay.classList.remove("small-font");
     displayTimeLeft(seconds);
     displayEndTime(then);
-  
+
     contdown = setInterval(() => {
       const secondsLeft = Math.round((then - Date.now()) / 1000);
       //Check if we should stop it
@@ -55,7 +55,7 @@ function displayEndTime(timestamp) {
   const adjustedHour = hour > 12 ? hour - 12 : hour;
   const adjustedMinutes =
     minutes === 0 ? "00" : minutes < 10 ? "0" + minutes : minutes;
-  endTime.textContent = `Be back at ${adjustedHour}:${adjustedMinutes}`;
+  endTime.textContent = `Be back at - ${adjustedHour}:${adjustedMinutes}`;
 }
 function startTimer() {
   const seconds = parseInt(this.dataset.time);
@@ -69,4 +69,3 @@ document.customForm.addEventListener("submit", function (e) {
   timer(mins * 60);
   this.reset();
 });
-

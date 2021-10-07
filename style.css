@@ -102,9 +102,9 @@ body {
   padding: 0 12px;
   text-align: center;
 }
-.display__time-left > p {
+/* .display__time-left > p {
   font-size: 2rem;
-}
+} */
 @media (max-width: 768px) {
   .timer {
     background-color: rgb(243, 144, 16);
@@ -121,6 +121,16 @@ body {
   }
   .timer__button {
     font-size: 1.5rem;
+  }
+  .description > h1 {
+    font-size: 2.5rem;
+  }
+  .display__time-left {
+    font-size: 7rem;
+    font-weight: 600;
+  }
+  .display__end-time {
+    font-size: 3rem;
   }
 }
 
