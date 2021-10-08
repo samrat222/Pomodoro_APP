@@ -107,7 +107,7 @@ body {
 } */
 @media (max-width: 768px) {
   .timer {
-    background-color: rgb(243, 144, 16);
+    background-color: #57c435;
     font-size: 1rem;
   }
   .display__end-time {
@@ -121,6 +121,7 @@ body {
   }
   .timer__button {
     font-size: 1.5rem;
+    border-radius: 2rem;
   }
   .description > h1 {
     font-size: 2.5rem;
