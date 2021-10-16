@@ -4,3 +4,4 @@ Post your name below to participate in Hacktoberfest: -
 -	Uttam Pandit
 -	Jonak Adipta Kalita
 - Shubham Kumar Yadav
+- Aditya Singh
