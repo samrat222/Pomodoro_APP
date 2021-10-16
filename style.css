@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 0.625rem;
   background: #8e24aa;
   background: #5c038f;
 }
@@ -22,7 +22,7 @@ body {
 .display__time-left {
   font-style: normal;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 11rem;
   margin: 0;
   color: white;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
@@ -36,6 +36,7 @@ body {
 .timer__controls {
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .timer__controls > * {
@@ -82,9 +83,9 @@ body {
 }
 .display {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 0px 30px;
-  border-radius: 6px;
-  margin-bottom: 20px;
+  padding: 1.25rem 0px 1.875rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1.25rem;
 }
 
 .display__end-time {
@@ -101,20 +102,43 @@ body {
   padding: 0 12px;
   text-align: center;
 }
-.display__time-left > p {
-  font-size: 35px;
-}
-@media screen and (max-width: 768px) {
+/* .display__time-left > p {
+  font-size: 2rem;
+} */
+@media (max-width: 768px) {
   .timer {
-    background-color: rgb(243, 144, 16);
+    background-color: #57c435;
     font-size: 1rem;
   }
   .display__end-time {
     color: rgb(243, 144, 16);
+  }
+  .timer__button {
+    width: 50%;
+  }
+  #custom {
+    width: 100%;
+  }
+  .timer__button {
+    font-size: 1.5rem;
+    border-radius: 2rem;
+  }
+  .description > h1 {
+    font-size: 2.5rem;
+  }
+  .display__time-left {
+    font-size: 7rem;
+    font-weight: 600;
+  }
+  .display__end-time {
+    font-size: 3rem;
   }
 }
 
 .social__icon--link {
   color: #fff;
   font-size: 3.5rem;
+}
+.small-font {
+  font-size: 4rem;
 }

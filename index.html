@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Countdown Timer</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inconsolata"
@@ -14,6 +16,7 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -26,7 +29,7 @@
         <button data-time="3000" class="timer__button">Pomodoro 50</button>
         <button data-time="600" class="timer__button">Pomodoro break 10</button>
         <form name="customForm" id="custom">
-          <input type="number" name="minutes" placeholder="Enter Minutes" />
+          <input type="number" min="0" name="minutes" placeholder="Enter Minutes" />
         </form>
       </div>
     </div>
@@ -55,4 +58,5 @@
 
     <script src="script.js"></script>
   </body>
+
 </html>
