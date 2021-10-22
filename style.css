@@ -31,6 +31,7 @@ body {
 .timer {
   display: flex;
   flex-direction: row;
+  background-color: #5c038f;
 }
 
 .timer__controls {
@@ -58,16 +59,24 @@ body {
   background: none;
   border: 0;
   cursor: pointer;
+  width: 16vw;
+  margin:  0 8px ;
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.1);
+  background:#5c038f;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   font-family: "Inconsolata", monospace;
 }
-
+@media screen and (max-width: 991px) {
+  .timer__button {
+     width: 70vw !important;
+     
+  }
+ 
+}
 .timer__button:hover,
 .timer__button:focus {
   background: rgba(0, 0, 0, 0.2);
@@ -80,26 +89,32 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
 }
 .display {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 1.25rem 0px 1.875rem;
-  border-radius: 0.375rem;
+  background-color: greenyellow;
+  padding: 1.25rem 5% 1.875rem;
+
   margin-bottom: 1.25rem;
+  margin-top: 1.25rem ;
+  box-shadow: 3px 3px 10px #dfd5cfd3, -1px 0 .5em #aaa78cb2;
+  filter: drop-shadow(0px 18px 18px rgba(0, 0, 0, 0.966));
 }
 
 .display__end-time {
-  font-size: 4rem;
-  color: white;
+  font-size: 5rem;
+  color:grey;
 }
 
-.description {
-  color: aliceblue;
+.desc{
+  color: rgb(238, 240, 241);
   font-size: 18px;
   line-height: 1.6em;
-  max-width: 100rem;
-  margin: auto;
-  padding: 0 12px;
+  height: 80vh;
+  width: 100%;
+  /* margin: auto; */
+  padding: 12% 12%;
+ background-color: #5c038f;
   text-align: center;
 }
 /* .display__time-left > p {
@@ -107,7 +122,11 @@ body {
 } */
 @media (max-width: 768px) {
   .timer {
+
+    background-color: #5c038f;
+
     background-color: #57c435;
+
     font-size: 1rem;
   }
   .display__end-time {
@@ -141,4 +160,7 @@ body {
 }
 .small-font {
   font-size: 4rem;
+}
+.topnav .icon {
+  display: none;
 }

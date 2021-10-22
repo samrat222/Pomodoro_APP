@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Countdown Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css?family=Inconsolata"
       rel="stylesheet"
@@ -18,26 +20,56 @@
     />
     
     <link rel="stylesheet" href="style.css" />
+
   </head>
 
   <body>
-    <div class="timer">
-      <div class="timer__controls">
-        <!-- <button data-time="20" class="timer__button">20 Secs</button> -->
-        <button data-time="1500" class="timer__button">Pomodoro 25</button>
-        <button data-time="300" class="timer__button">Pomodoro break 5</button>
-        <button data-time="3000" class="timer__button">Pomodoro 50</button>
-        <button data-time="600" class="timer__button">Pomodoro break 10</button>
-        <form name="customForm" id="custom">
-          <input type="number" min="0" name="minutes" placeholder="Enter Minutes" />
-        </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="fs-1 navbar-brand" href="#">Pomodoro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button data-time="1500" class="timer__button">Pomodoro 25</button>
+            </li>
+            <li class="nav-item">
+              <button data-time="300" class="timer__button">Pomodoro break 5</button>
+            </li>
+        
+            <li class="nav-item">
+              <button data-time="3000" class="timer__button">Pomodoro 50</button>
+            </li>
+            <li class="nav-item">
+              <button data-time="600" class="timer__button">Pomodoro break 10</button>
+            </li>
+          </ul>
+          <form name="d-flex customForm" id="custom" >
+            <input class="w-75" type="number" min="0" name="minutes" placeholder="Enter Minutes" style="font-size: 2rem !important; " />
+          </form>
+        </div>
       </div>
-    </div>
+    </nav>
+    <!-- <div class="timer"> -->
+      <!-- <div class="timer__controls"> -->
+        <!-- <button data-time="20" class="timer__button">20 Secs</button> -->
+        <!-- <button data-time="1500" class="timer__button">Pomodoro 25</button> -->
+        <!-- <button data-time="300" class="timer__button">Pomodoro break 5</button> -->
+        <!-- <button data-time="3000" class="timer__button">Pomodoro 50</button> -->
+        <!-- <button data-time="600" class="timer__button">Pomodoro break 10</button> -->
+        <!-- <form name="customForm" id="custom"> -->
+          <!-- <input type="number" min="0" name="minutes" placeholder="Enter Minutes" /> -->
+        <!-- </form> -->
+     
+      <!-- </div> -->
+    <!-- </div> --> 
     <div class="display">
       <h1 class="display__time-left"></h1>
       <p class="display__end-time"></p>
     </div>
-    <div class="description">
+    <div class="desc">
       <h1>What is Pomodoro Technique ?</h1>
       <p>
         The Pomodoro Technique is created by Francesco Cirillo for a more
@@ -47,16 +79,19 @@
         word for 'tomato', after the tomato-shaped kitchen timer that Cirillo
         used as a University student.
       </p>
-    </div>
-
-    <a
+      <a
       href="https://github.com/samrat222"
       class="social__icon--link"
       target="_blank"
-      ><i class="fab fa-github"></i
-    ></a>
+      ><i class="fab fa-github"></i></a>
+    </div>
 
-    <script src="script.js"></script>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
   </body>
+
+  <script src="script.js"></script>
 
 </html>
