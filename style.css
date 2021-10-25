@@ -125,6 +125,12 @@ body {
   }
   .description > h1 {
     font-size: 2.5rem;
+    
+  }
+
+  .description > p {
+    text-align: justify;
+    padding:2rem;
   }
   .display__time-left {
     font-size: 7rem;
