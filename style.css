@@ -31,6 +31,7 @@ body {
 .timer {
   display: flex;
   flex-direction: row;
+  /* justify-content: space-around; */
 }
 
 .timer__controls {
@@ -64,7 +65,8 @@ body {
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  /* padding: 2rem; */
+  /* margin:auto 0; */
   font-family: "Inconsolata", monospace;
 }
 
@@ -107,7 +109,7 @@ body {
 } */
 @media (max-width: 768px) {
   .timer {
-    background-color: #57c435;
+    background-color: rgba(0, 0, 0, 0.1);;
     font-size: 1rem;
   }
   .display__end-time {
@@ -115,13 +117,15 @@ body {
   }
   .timer__button {
     width: 50%;
+    justify-content: space-around;
   }
   #custom {
     width: 100%;
   }
   .timer__button {
     font-size: 1.5rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
+    
   }
   .description > h1 {
     font-size: 2.5rem;
