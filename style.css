@@ -37,6 +37,8 @@ body {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  padding: 3px;
+  margin: 5px;
 }
 
 .timer__controls > * {
@@ -46,6 +48,7 @@ body {
 .timer__controls form {
   flex: 1;
   display: flex;
+  margin: 7px;
 }
 
 .timer__controls input {
@@ -66,6 +69,8 @@ body {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   font-family: "Inconsolata", monospace;
+  margin: 5px;
+  border-radius: 5%;
 }
 
 .timer__button:hover,
@@ -147,4 +152,12 @@ body {
 }
 .small-font {
   font-size: 4rem;
+}
+
+
+@media (max-width: 380px) {
+  .timer__button {
+    margin-left:6%;
+    margin-right:6%;
+  } 
 }
