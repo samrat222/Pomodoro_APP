@@ -5,4 +5,5 @@ Post your name below to participate in Hacktoberfest: -
 -	Uttam Pandit
 -	Jonak Adipta Kalita
 - Aditya singh
-- Eisha Halder .
+- Eisha Halder 
+- Sayahnneeta Dutta.
