@@ -55,6 +55,20 @@ body {
   flex: 1;
   border: 0;
   padding: 2rem;
+  background-color: #5c038f;
+  opacity: 0.8;
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  z-index: -3;
+}
+::placeholder
+{
+  color: #fff;
+  opacity: 1;
+  font-family: 'Bebas Neue', cursive;
+  z-index: 100;
 }
 
 .timer__button {
@@ -106,6 +120,7 @@ body {
   padding: 0 12px;
   text-align: center;
 }
+
 /* .display__time-left > p {
   font-size: 2rem;
 } */
@@ -133,6 +148,8 @@ body {
   #custom {
     width: 100%;
   }
+  
+  
   .timer__button {
     font-size: 1.3rem;
     border-radius: 0.5rem;
