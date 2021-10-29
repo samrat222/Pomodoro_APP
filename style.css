@@ -106,6 +106,12 @@ body {
   padding: 0 12px;
   text-align: center;
 }
+
+.description > p {
+  text-align: justify;
+  padding:3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
 /* .display__time-left > p {
   font-size: 2rem;
 } */
@@ -146,6 +152,7 @@ body {
   .description > p {
     text-align: justify;
     padding:2rem;
+    font-family: 'Times New Roman', Times, serif;
   }
   .display__time-left {
     font-size: 7rem;
