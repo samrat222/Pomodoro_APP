@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Pomodoro App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Countdown Timer</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inconsolata"
       rel="stylesheet"
@@ -16,12 +16,16 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    
+    <link rel="shortcut icon" href="./image/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" />
   </head>
 
   <body>
+    <div class="nav">
+      <img src="./image/icon-white.png" alt="" />
+      <h1>PomoFocus</h1>
+    </div>
+
     <div class="timer">
       <div class="timer__controls">
         <!-- <button data-time="20" class="timer__button">20 Secs</button> -->
@@ -29,9 +33,9 @@
         <button data-time="300" class="timer__button">Pomodoro break 5</button>
         <button data-time="3000" class="timer__button">Pomodoro 50</button>
         <button data-time="600" class="timer__button">Pomodoro break 10</button>
-        <form name="customForm" id="custom">
-          <input type="number" min="0" name="minutes" placeholder="Enter Minutes" />
-        </form>
+        <!-- <form name="customForm" id="custom">
+          <input type="number" name="minutes" placeholder="Enter Minutes" />
+        </form> -->
       </div>
     </div>
     <div class="display">
@@ -46,18 +50,21 @@
         down work into intervals, traditionally 25 minutes in length, separated
         by short breaks. Each interval is known as a pomodoro, from the Italian
         word for 'tomato', after the tomato-shaped kitchen timer that Cirillo
-        used as a University student.
+        used as a university student
       </p>
     </div>
-
-    <a
+    <div class="footer">
+      <h1>Made with love  :)) by Samrat</h3>
+        <a
       href="https://github.com/samrat222"
       class="social__icon--link"
       target="_blank"
       ><i class="fab fa-github"></i
     ></a>
+    </div>
+
+    
 
     <script src="script.js"></script>
   </body>
-
 </html>
