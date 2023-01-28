@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Countdown Timer</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inconsolata"
@@ -20,30 +22,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <div class="nav">
+  <body class=" bg-slate-500">
+    <!-- <div class="nav">
       <img src="./image/icon-white.png" alt="" />
-      <h1>PomoFocus</h1>
-    </div>
+      <h1 class="text-red-200 text-md">PomoFocus</h1>
+    </div> -->
+
+    
+<nav class=" rounded text-lg py-11 flex flex-row justify-center bg-gray-600 ">
+  <div class="container flex gap-x-12 items-center justify-center">
+    <img src="./image/favicon.jpg" class="w-40 " alt="" />
+    <p class="text-black font-bold text-8xl text-gray-300">PomoFocus</p>
+  </div>
+  
+</nav>
+
 
     <div class="timer">
       <div class="timer__controls">
         <!-- <button data-time="20" class="timer__button">20 Secs</button> -->
-        <button data-time="1500" class="timer__button">Pomodoro 25</button>
-        <button data-time="300" class="timer__button">Pomodoro break 5</button>
-        <button data-time="3000" class="timer__button">Pomodoro 50</button>
-        <button data-time="600" class="timer__button">Pomodoro break 10</button>
+        <button data-time="1500" class="text-white p-10 rounded-md bg-slate-800 my-5 mx-5 text-4xl hover:bg-slate-700 text-gray-300 hover:drop-shadow-2xl  duration-300 shadow-2xl  ">Pomodoro 25</button>
+        <button data-time="300" class="text-white p-10 rounded-md bg-slate-800 my-5 mx-5 text-4xl hover:bg-slate-700 hover:drop-shadow-2xl duration-300 ">Pomodoro break 5</button>
+        <button data-time="3000" class="text-white p-10 rounded-md bg-slate-800 my-5 mx-5 text-4xl hover:bg-slate-700 hover:drop-shadow-2xl duration-300 ">Pomodoro 50</button>
+        <button data-time="600" class="text-white p-10 rounded-md bg-slate-800 my-5 mx-5 text-4xl hover:bg-slate-700 hover:drop-shadow-2xl duration-300 ">Pomodoro break 10</button>
         <!-- <form name="customForm" id="custom">
           <input type="number" name="minutes" placeholder="Enter Minutes" />
         </form> -->
       </div>
     </div>
-    <div class="display">
+    <div class="display" id="display">
       <h1 class="display__time-left"></h1>
       <p class="display__end-time"></p>
     </div>
     <div class="description">
-      <h1>What is Pomodoro Technique ?</h1>
+      <h1 class="text-6xl font-bold text-gray-700 my-10">What is Pomodoro Technique ?</h1>
       <p>
         The Pomodoro Technique is created by Francesco Cirillo for a more
         productive way to work and study. The technique uses a timer to break
@@ -67,4 +79,17 @@
 
     <script src="script.js"></script>
   </body>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </html>
